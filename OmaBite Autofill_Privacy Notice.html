@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Notice of Nutrition Autofill</title>
+  <style>
+    :root {
+      /* Colors read from the RTF expandedcolortbl cssrgb values. */
+      --black: #000000;      /* cf2: cssrgb(0, 0, 0) */
+      --body-gray: #686868;  /* cf3: cssrgb(40.682%, 40.682%, 40.682%) */
+      --brand-blue: #3D60C2; /* cf4: cssrgb(23.922%, 37.647%, 76.078%) */
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      background: #ffffff;
+      -webkit-text-size-adjust: 100%;
+      text-size-adjust: 100%;
+    }
+
+    body {
+      margin: 0;
+      background: #ffffff;
+      color: var(--body-gray);
+      font-family: "Avenir Next", Avenir, sans-serif;
+      font-size: 11pt;
+      line-height: 14.4pt;
+      font-weight: 400;
+    }
+
+    .page {
+      max-width: 6.5in;
+      margin: 0 auto;
+      padding: 1in 0;
+    }
+
+    header {
+      text-align: center;
+      margin: 0 0 16pt;
+    }
+
+    h1 {
+      margin: 0;
+      color: var(--black);
+      font-family: "Avenir Next", Avenir, sans-serif;
+      font-size: 30pt;
+      line-height: 36pt;
+      font-weight: 700;
+    }
+
+    .subtitle {
+      margin: 0;
+      color: var(--black);
+      font-size: 12pt;
+      line-height: 14.4pt;
+      font-weight: 400;
+    }
+
+    .updated {
+      margin: 14.4pt 0 0;
+      color: var(--body-gray);
+      font-size: 10pt;
+      line-height: 14.4pt;
+      font-weight: 400;
+    }
+
+    section {
+      margin: 0 0 16pt;
+    }
+
+    h2 {
+      margin: 0 0 8pt;
+      color: var(--brand-blue);
+      font-family: "Avenir Next", Avenir, sans-serif;
+      font-size: 14pt;
+      line-height: 16.8pt;
+      font-weight: 700;
+    }
+
+    p {
+      margin: 0 0 16pt;
+      color: var(--body-gray);
+      font-size: 11pt;
+      line-height: 14.4pt;
+      font-weight: 400;
+    }
+
+    .lead-after-heading {
+      margin-bottom: 6pt;
+    }
+
+    .bold-black {
+      color: var(--black);
+      font-weight: 700;
+    }
+
+    strong {
+      font-weight: 700;
+    }
+
+    ul {
+      margin: 0 0 12pt 0.17in;
+      padding-left: 0;
+      color: var(--body-gray);
+      font-size: 11pt;
+      line-height: 14.4pt;
+    }
+
+    li {
+      margin: 0;
+      padding-left: 0;
+    }
+
+    .consent-path {
+      margin-bottom: 6pt;
+      color: var(--black);
+      font-weight: 700;
+    }
+
+    a,
+    a:visited,
+    a:hover,
+    a:active {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .rtf-link {
+      color: var(--body-gray);
+      font-style: italic;
+      font-weight: 400;
+      text-decoration: none;
+    }
+
+    @media (max-width: 760px) {
+      .page {
+        max-width: none;
+        padding: 36pt 24pt;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header>
+      <h1>Privacy Notice</h1>
+      <p class="subtitle">of Nutrition Autofill</p>
+      <p class="updated">Last updated: April 23, 2026</p>
+    </header>
+
+    <section>
+      <h2>1. Overview</h2>
+      <p>The Nutrition Autofill feature extracts nutrition information from content you submit and autofills the nutrition fields in OmaBite. This is the only feature in OmaBite that sends data off your device.</p>
+    </section>
+
+    <section>
+      <h2>2. What gets sent</h2>
+      <p class="bold-black lead-after-heading">You can submit two types of content:</p>
+      <ul>
+        <li>Image — a nutrition label photo you capture with the camera.</li>
+        <li>Text — text you type or paste describing the nutrition information.</li>
+      </ul>
+      <p>Only the content you actively submit is sent. No other data from your diary, profile, or device is included.</p>
+    </section>
+
+    <section>
+      <h2>3. Where it goes</h2>
+      <p>Your submission is sent to <strong>OpenAI's API</strong> to extract structured nutrition data, which is returned to the app to autofill in the fields. OpenAI's handling of API submissions is governed by its own policies and terms, available at&nbsp; <a class="rtf-link" href="https://openai.com/policies/api-data-usage-policies">https://openai.com/policies/api-data-usage-policies</a><span class="rtf-link">.</span></p>
+      <p>Per OpenAI's current API policy, content sent via API is not used to train AI models. OpenAI may retain API data for a limited period for abuse monitoring, then delete it. OmaBite does not store your submission on any server — we don't operate one.</p>
+    </section>
+
+    <section>
+      <h2>4. Your consent</h2>
+      <p class="bold-black consent-path">The feature only sends content after you have explicitly granted consent. You can withdraw your consent at any time:<br>More (on iPhone) → Legal &amp; Privacy → Nutrition Autofill Consent → Revoke</p>
+      <p class="bold-black lead-after-heading">After you withdraw consent:</p>
+      <ul>
+        <li>No image will be sent to OpenAI from this feature.</li>
+        <li>You can continue to use all other features of OmaBite, including manually entering nutrition values. You may grant and withdraw your consent as many times as you wish. Granting consent does not automatically send any data — content is only sent when you actively submit an image or text through the Nutrition Autofill feature.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
