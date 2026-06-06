@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Support Page of OmaBite</title>
+  <meta name="description" content="Official support page for OmaBite.">
+  <style>
+    :root {
+      --black: #000000;
+      --brand-blue: #3D60C2; /* RTF expandedcolortbl cf3: cssrgb(23.922%, 37.647%, 76.078%) */
+      --muted: #686868;      /* RTF expandedcolortbl cf4: cssrgb(40.682%, 40.682%, 40.682%) */
+      --link-blue: #2869A4;  /* RTF expandedcolortbl cf5: cssrgb(15.736%, 41.141%, 64.371%) */
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      background: #ffffff;
+    }
+
+    body {
+      margin: 0;
+      background: #ffffff;
+      color: var(--black);
+      font-family: "Avenir Next", Avenir, sans-serif;
+      font-size: 11pt;
+      line-height: 1.255;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    .page {
+      max-width: 6.5in;
+      margin: 1in auto;
+      padding: 0 0.2in;
+    }
+
+    h1 {
+      margin: 0 0 4pt;
+      color: var(--black);
+      font-family: "Avenir Next", Avenir, sans-serif;
+      font-size: 30pt;
+      font-weight: 700;
+      line-height: 1.08;
+      text-align: center;
+    }
+
+    h1 .brand {
+      color: var(--brand-blue);
+    }
+
+    .updated {
+      margin: 0 0 24pt;
+      color: var(--muted);
+      font-size: 10pt;
+      line-height: 1.2;
+      text-align: center;
+    }
+
+    p {
+      margin: 0 0 8pt;
+    }
+
+    .para-wide {
+      margin-bottom: 16pt;
+    }
+
+    h2 {
+      margin: 16pt 0 8pt;
+      color: var(--brand-blue);
+      font-family: "Avenir Next", Avenir, sans-serif;
+      font-size: 14pt;
+      font-weight: 700;
+      line-height: 1.2;
+      display: flex;
+      align-items: baseline;
+      gap: 18pt;
+    }
+
+    h2 .number {
+      flex: 0 0 auto;
+    }
+
+    h2 .title {
+      flex: 1 1 auto;
+    }
+
+    .rtf-list {
+      list-style: none;
+      margin: 0 0 16pt;
+      padding: 0;
+    }
+
+    .rtf-list li {
+      position: relative;
+      margin: 0 0 8pt;
+      padding-left: 0.9em;
+    }
+
+    .rtf-list li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
+    a.email {
+      color: var(--brand-blue);
+      font-family: "Avenir Next", Avenir, sans-serif;
+      font-weight: 700;
+      text-decoration: underline;
+      text-decoration-color: var(--brand-blue);
+      text-underline-offset: 0.08em;
+    }
+
+    a.rtf-url {
+      color: var(--link-blue);
+      font-family: "Avenir Next", Avenir, sans-serif;
+      font-style: italic;
+      font-weight: 400;
+      text-decoration: none;
+    }
+
+    @media (max-width: 720px) {
+      .page {
+        max-width: none;
+        margin: 40pt auto;
+        padding: 0 24px;
+      }
+
+      h1 {
+        font-size: 26pt;
+      }
+
+      h2 {
+        gap: 12pt;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <h1>Support Page of <span class="brand">OmaBite</span></h1>
+    <p class="updated">Last updated: June 6, 2026</p>
+
+    <p class="para-wide">This page is the official support destination for OmaBite on the App Store. Use it to get help, report a problem, or ask questions about the app.</p>
+
+    <section aria-labelledby="contact-us">
+      <h2 id="contact-us"><span class="number">1.</span><span class="title">Contact Us</span></h2>
+      <p>For the fastest response, email us. Please include your device model, iOS version, app version, and a short description of what happened. If you are reporting a bug, include the steps to reproduce it and screenshots if they are safe to share.</p>
+      <p class="para-wide">Email: <a class="email" href="mailto:support@omabite.com">support@omabite.com</a></p>
+    </section>
+
+    <section aria-labelledby="what-omabite-is">
+      <h2 id="what-omabite-is"><span class="number">2.</span><span class="title">What OmaBite Is</span></h2>
+      <p>OmaBite helps you keep a visual food diary and understand your daily nutrition. You can log meals, ingredients, recipes, packaged foods, water intake, and body weight. OmaBite also includes Smart Pick logging, portion adjustment, a personalized food library, and optional iCloud Sync.</p>
+      <p class="para-wide">OmaBite can use the camera or pasted text to help autofill nutrition information from nutrition labels. Nutrition Autofill is used only when you choose to submit a photo or text, and you can revoke consent in the app.</p>
+    </section>
+
+    <section aria-labelledby="common-troubleshooting">
+      <h2 id="common-troubleshooting"><span class="number">3.</span><span class="title">Common Troubleshooting</span></h2>
+      <ul class="rtf-list">
+        <li>Update the app - Install the latest version from the App Store.</li>
+        <li>Restart OmaBite - Close the app from the app switcher and open it again.</li>
+        <li>Restart your device - This can resolve temporary camera, iCloud, StoreKit, or system permission issues.</li>
+        <li>Allow time for first iCloud sync — When you turn on iCloud Sync in a fresh or empty copy of OmaBite, your log history, including meal, water, and weight logs, as well as your meal library, may take longer to appear while iCloud finishes downloading your data. This is normal during the first sync.</li>
+        <li>Check camera access - In iOS Settings &gt; OmaBite, confirm camera access is enabled if you want to take nutrition label photos.</li>
+        <li>Check iCloud Sync - Make sure you are signed in to iCloud, iCloud is available for OmaBite in iOS Settings, and the iCloud Sync toggle is enabled in the app if you want syncing.</li>
+        <li>Try pasted label text - If you found the label of the food through the internet on the same device you use OmaBite, it could be difficult to take a photo. Try copying the nutrition information and use the Fill from text feature instead.</li>
+        <li>Restore purchases - If a subscription does not appear active, use Restore purchases from the subscription screen and make sure you are signed in with the Apple ID used for the purchase.</li>
+        <li>Reinstall only as a last resort - Deleting the app can remove local data that has not synced or backed up.</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="nutrition-health-note">
+      <h2 id="nutrition-health-note"><span class="number">4.</span><span class="title">Nutrition And Health Note</span></h2>
+      <p class="para-wide">OmaBite is for personal food logging and nutrition tracking. Nutrition values and autofill results should be reviewed by you before saving. OmaBite is not a medical device and does not provide medical diagnosis, treatment, or professional dietary advice.</p>
+    </section>
+
+    <section aria-labelledby="subscriptions-purchases">
+      <h2 id="subscriptions-purchases"><span class="number">5.</span><span class="title">Subscriptions And Purchases</span></h2>
+      <p>Subscriptions are handled by Apple through the App Store. You can manage or cancel subscriptions in iOS Settings &gt; Apple ID &gt; Subscriptions.</p>
+      <p class="para-wide">Subscription and license terms are covered by Apple's Standard End User License Agreement: <a class="rtf-url" href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">https://www.apple.com/legal/internet-services/itunes/dev/stdeula/</a></p>
+    </section>
+
+    <section aria-labelledby="privacy">
+      <h2 id="privacy"><span class="number">6.</span><span class="title">Privacy</span></h2>
+      <p>How OmaBite handles data is explained in the Privacy Policy inside the app: More &gt; Legal &amp; Privacy &gt; Privacy Policy.</p>
+      <p class="para-wide">Nutrition Autofill has a separate notice because photos or text may be sent to OpenAI when you choose to use autofill: <a class="rtf-url" href="https://12ihifn88a.github.io/OmaBite/OmaBite_Autofill_Privacy_Notice.html">https://12ihifn88a.github.io/OmaBite/OmaBite_Autofill_Privacy_Notice.html</a></p>
+    </section>
+
+    <section aria-labelledby="response-times">
+      <h2 id="response-times"><span class="number">7.</span><span class="title">Response Times</span></h2>
+      <p>We aim to reply to support email as soon as possible. Complex issues may take longer.</p>
+    </section>
+  </main>
+</body>
+</html>
