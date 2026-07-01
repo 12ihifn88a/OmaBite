@@ -1,187 +1,225 @@
 <!doctype html>
+<!-- version: omabite-nutrition-autofill-privacy-notice-rtf-matched-v3 -->
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Privacy Notice of Nutrition Autofill</title>
+  <meta name="description" content="Privacy Notice of Nutrition Autofill, last updated April 23, 2026.">
   <style>
     :root {
-      /* Colors read from the RTF expandedcolortbl cssrgb values. */
-      --black: #000000;      /* cf2: cssrgb(0, 0, 0) */
-      --body-gray: #686868;  /* cf3: cssrgb(40.682%, 40.682%, 40.682%) */
-      --brand-blue: #3D60C2; /* cf4: cssrgb(23.922%, 37.647%, 76.078%) */
+      --omabite-blue: #3D60C2;
+      --body-gray: #686868;
+      --link-blue: #205493;
+      --paper: #ffffff;
+      --outside: #ffffff;
+      --black: #000000;
     }
 
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
     html {
-      background: #ffffff;
+      background: var(--outside);
       -webkit-text-size-adjust: 100%;
-      text-size-adjust: 100%;
     }
 
     body {
       margin: 0;
-      background: #ffffff;
+      background: var(--outside);
       color: var(--body-gray);
       font-family: "Avenir Next", Avenir, sans-serif;
-      font-size: 11pt;
-      line-height: 14.4pt;
-      font-weight: 400;
+      font-size: 14.67px;
+      line-height: 1.31;
     }
 
-    .page {
-      max-width: 6.5in;
+    .sheet {
+      width: min(100%, 8.5in);
+      min-height: 100vh;
       margin: 0 auto;
-      padding: 1in 0;
-    }
-
-    header {
-      text-align: center;
-      margin: 0 0 16pt;
+      background: var(--paper);
+      padding: 1.08in 1in 0.85in;
+      box-shadow: none;
     }
 
     h1 {
-      margin: 0;
+      margin: 0 0 0;
       color: var(--black);
       font-family: "Avenir Next", Avenir, sans-serif;
-      font-size: 30pt;
-      line-height: 36pt;
+      font-size: 40px;
+      line-height: 1.05;
+      letter-spacing: -0.015em;
       font-weight: 700;
+      text-align: center;
     }
 
     .subtitle {
-      margin: 0;
+      margin: 0 0 0;
       color: var(--black);
-      font-size: 12pt;
-      line-height: 14.4pt;
+      font-family: "Avenir Next", Avenir, sans-serif;
+      font-size: 16px;
+      line-height: 1.31;
       font-weight: 400;
+      text-align: center;
     }
 
     .updated {
-      margin: 14.4pt 0 0;
+      margin: 0 0 36px;
       color: var(--body-gray);
-      font-size: 10pt;
-      line-height: 14.4pt;
-      font-weight: 400;
+      font-size: 13.33px;
+      text-align: center;
+      line-height: 1.44;
     }
 
-    section {
-      margin: 0 0 16pt;
-    }
+    p { margin: 0 0 14px; }
 
-    h2 {
-      margin: 0 0 8pt;
-      color: var(--brand-blue);
-      font-family: "Avenir Next", Avenir, sans-serif;
-      font-size: 14pt;
-      line-height: 16.8pt;
-      font-weight: 700;
-    }
-
-    p {
-      margin: 0 0 16pt;
-      color: var(--body-gray);
-      font-size: 11pt;
-      line-height: 14.4pt;
-      font-weight: 400;
-    }
-
-    .lead-after-heading {
-      margin-bottom: 6pt;
-    }
-
-    .bold-black {
-      color: var(--black);
-      font-weight: 700;
-    }
-
-    strong {
-      font-weight: 700;
-    }
-
-    ul {
-      margin: 0 0 12pt 0.17in;
-      padding-left: 0;
-      color: var(--body-gray);
-      font-size: 11pt;
-      line-height: 14.4pt;
-    }
-
-    li {
-      margin: 0;
-      padding-left: 0;
-    }
-
-    .consent-path {
-      margin-bottom: 6pt;
-      color: var(--black);
-      font-weight: 700;
-    }
+    strong { color: var(--black); font-weight: 700; }
+    .demi { font-weight: 600; }
+    .path { color: var(--black); font-weight: 600; }
 
     a,
+    a:link,
     a:visited,
     a:hover,
     a:active {
-      color: inherit;
-      text-decoration: none;
-    }
-
-    .rtf-link {
-      color: var(--body-gray);
+      color: var(--link-blue);
       font-style: italic;
       font-weight: 400;
       text-decoration: none;
+      overflow-wrap: anywhere;
+      word-break: break-word;
+    }
+
+    h2 {
+      margin: 0 0 16px;
+      color: var(--omabite-blue);
+      font-family: "Avenir Next", Avenir, sans-serif;
+      font-size: 18.67px;
+      line-height: 1.22;
+      font-weight: 700;
+      letter-spacing: 0;
+    }
+
+    h2:not(:first-of-type) { margin-top: 28px; }
+
+    .section-body { margin: 0 0 21px; }
+
+    .black-lead {
+      color: var(--black);
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .consent-path {
+      color: var(--black);
+      font-weight: 600;
+      margin: 0 0 13px;
+    }
+
+    .after-heading {
+      color: var(--black);
+      font-weight: 700;
+      margin: 0 0 8px;
+    }
+
+    .provider-label {
+      margin: 0 0 4px;
+      color: var(--body-gray);
+      line-height: 1.0;
+    }
+
+    .provider-url {
+      margin: 0 0 14px;
+      line-height: 1.31;
+    }
+
+    ul {
+      margin: 0 0 25px;
+      padding-left: 0;
+      list-style-position: outside;
+    }
+
+    li {
+      margin: 0 0 4px 18px;
+      padding-left: 0;
+      color: var(--body-gray);
+    }
+
+    li::marker {
+      color: var(--body-gray);
+      font-size: 0.78em;
     }
 
     @media (max-width: 760px) {
-      .page {
-        max-width: none;
-        padding: 36pt 24pt;
+      body { font-size: 15px; }
+      .sheet {
+        width: 100%;
+        padding: 44px 22px 52px;
+        box-shadow: none;
+      }
+      h1 {
+        font-size: clamp(32px, 9.5vw, 40px);
+        line-height: 1.07;
+      }
+      .subtitle { font-size: 16px; }
+      .updated { font-size: 13px; margin-bottom: 30px; }
+      h2 { font-size: 19px; }
+    }
+
+    @media print {
+      html, body { background: white; }
+      .sheet {
+        width: auto;
+        min-height: auto;
+        margin: 0;
+        padding: 1.08in 1in 0.85in;
+        box-shadow: none;
       }
     }
   </style>
 </head>
 <body>
-  <main class="page">
-    <header>
-      <h1>Privacy Notice</h1>
-      <p class="subtitle">of Nutrition Autofill</p>
-      <p class="updated">Last updated: April 23, 2026</p>
-    </header>
+  <main class="sheet">
+    <h1>Privacy Notice</h1>
+    <p class="subtitle">of Nutrition Autofill</p>
+    <p class="updated">Last updated: April 23, 2026</p>
 
-    <section>
-      <h2>1. Overview</h2>
-      <p>The Nutrition Autofill feature extracts nutrition information from content you submit and autofills the nutrition fields in OmaBite.</p>
-    </section>
+    <h2><span class="section-number">1.</span> Overview</h2>
+    <p class="section-body">The Nutrition Autofill feature extracts nutrition information from content you submit and autofills the nutrition fields in OmaBite.</p>
 
-    <section>
-      <h2>2. What gets sent</h2>
-      <p class="bold-black lead-after-heading">You can submit two types of content:</p>
-      <ul>
-        <li>Image — a nutrition label photo you capture with the camera.</li>
-        <li>Text — text you type or paste describing the nutrition information.</li>
-      </ul>
-      <p>Only the content you actively submit is sent. No other data from your diary, profile, or device is included.</p>
-    </section>
+    <h2><span class="section-number">2.</span> What gets sent</h2>
+    <p class="black-lead">You can submit two types of content:</p>
+    <ul>
+      <li>Image — a nutrition label photo you capture with the camera.</li>
+      <li>Text — text you type or paste describing the nutrition information.</li>
+    </ul>
+    <p class="section-body">Only the content you actively submit is sent. No other data from your diary, profile, or device is included.</p>
 
-    <section>
-      <h2>3. Where it goes</h2>
-      <p>Your submission is sent to <strong>OpenAI's API</strong> to extract structured nutrition data, which is returned to the app to autofill in the fields. OpenAI's handling of API submissions is governed by its own policies and terms, available at&nbsp; <a class="rtf-link" href="https://openai.com/policies/api-data-usage-policies">https://openai.com/policies/api-data-usage-policies</a><span class="rtf-link">.</span></p>
-      <p>Per OpenAI's current API policy, content sent via API is not used to train AI models. OpenAI may retain API data for a limited period for abuse monitoring, then delete it. OmaBite does not store your submission on any server — we don't operate one.</p>
-    </section>
+    <h2><span class="section-number">3.</span> Where it goes</h2>
+    <p>Your submission is sent to <span class="demi">the applicable Nutrition Autofill service provider</span> to extract structured nutrition data, which is returned to the app to autofill in the fields. We currently use OpenAI to process Nutrition Autofill images and text for most users. For users in Mainland China, Hong Kong, and Macao, we may use Alibaba Cloud's Qwen API to process Nutrition Autofill images and text.</p>
 
-    <section>
-      <h2>4. Your consent</h2>
-      <p class="bold-black consent-path">The feature only sends content after you have explicitly granted consent. You can withdraw your consent at any time:<br>More (on iPhone) → Legal &amp; Privacy → Nutrition Autofill Consent → Revoke</p>
-      <p class="bold-black lead-after-heading">After you withdraw consent:</p>
-      <ul>
-        <li>No image will be sent to OpenAI from this feature.</li>
-        <li>You can continue to use all other features of OmaBite, including manually entering nutrition values. You may grant and withdraw your consent as many times as you wish. Granting consent does not automatically send any data — content is only sent when you actively submit an image or text through the Nutrition Autofill feature.</li>
-      </ul>
-    </section>
+    <p>OpenAI's handling of API submissions is governed by its own policies and terms: <a href="https://openai.com/policies/api-data-usage-policies" target="_blank" rel="noopener noreferrer">https://openai.com/policies/api-data-usage-policies</a></p>
+
+    <p>For users whose Nutrition Autofill submissions are processed through Alibaba Cloud's Qwen API, Alibaba Cloud's handling of submitted content is governed by its own policies and terms, including Alibaba Cloud Model Studio's security and privacy documentation and Alibaba Cloud's privacy policy.</p>
+
+    <p class="provider-label">Alibaba Cloud Model Studio security and privacy documentation:</p>
+    <p class="provider-url"><a href="https://www.alibabacloud.com/help/en/model-studio/privacy-notice" target="_blank" rel="noopener noreferrer">https://www.alibabacloud.com/help/en/model-studio/privacy-notice</a></p>
+
+    <p class="provider-label">Alibaba Cloud International Website Privacy Policy:</p>
+    <p class="provider-url"><a href="https://www.alibabacloud.com/help/en/legal/latest/alibaba-cloud-international-website-privacy-policy" target="_blank" rel="noopener noreferrer">https://www.alibabacloud.com/help/en/legal/latest/alibaba-cloud-international-website-privacy-policy</a></p>
+
+    <p class="provider-label">Alibaba Cloud Model Studio Service Agreement:</p>
+    <p class="provider-url"><a href="https://terms.alicdn.com/legal-agreement/terms/common_platform_service/20230728213935489/20230728213935489.html" target="_blank" rel="noopener noreferrer">https://terms.alicdn.com/legal-agreement/terms/common_platform_service/20230728213935489/20230728213935489.html</a></p>
+
+    <p class="section-body">According to the current policies of our Nutrition Autofill service providers, submitted content is not used to train their AI models. The applicable service provider may temporarily retain or store submitted content or call data according to its own policies, terms, and retention practices. OmaBite does not store your submission on any server — we don't operate one.</p>
+
+    <h2><span class="section-number">4.</span> Your consent</h2>
+    <p>The feature only sends content after you have explicitly granted consent. You can withdraw your consent at any time:</p>
+    <p class="consent-path">More (on iPhone) → Legal &amp; Privacy → Nutrition Autofill Consent → Revoke</p>
+    <p class="after-heading">After you withdraw consent:</p>
+    <ul>
+      <li>No image or text will be sent to any Nutrition Autofill service provider from this feature.</li>
+      <li>You can continue to use all other features of OmaBite, including manually entering nutrition values. You may grant and withdraw your consent as many times as you wish. Granting consent does not automatically send any data — content is only sent when you actively submit an image or text through the Nutrition Autofill feature.</li>
+    </ul>
   </main>
 </body>
 </html>
