@@ -242,7 +242,7 @@
 <body>
 <main class="sheet">
 <h1>Privacy Policy of <span>OmaBite</span></h1>
-<p class="updated">Last updated: July 2, 2026</p>
+<p class="updated">Last updated: October 6, 2026</p>
 <p><span style="color: #000000"><em><strong>Kehan Chen</strong></em></span> ("we," "us," or "our") operates <span class="brand-word"><em><strong style="color: var(--omabite-blue) !important;">OmaBite</strong></em></span> (the "App"). This Privacy Policy explains what data the App processes, how it is used, and what choices you have.</p>
 <h3 class="contact-heading">Contact Information</h3>
 <p><span class="nav-path-token">The Developer:</span> Kehan Chen</p>
@@ -254,7 +254,7 @@
 <ul>
 <li>Your food diary, meals, weight, water, and other in-app content you create stay on your device (and in your personal iCloud, if you enable sync).</li>
 <li>We do not operate our own servers for your diary data.</li>
-<li>Limited data may leave your device in two cases: when you actively use the optional Nutrition Autofill feature, and when the App sends limited subscription paywall and purchase-flow diagnostic information to help troubleshoot and improve the subscription experience.</li>
+<li>Limited data may leave your device in three cases: when you actively use the optional Nutrition Autofill feature, when you actively use the optional Image Studio feature, and when the App sends limited subscription paywall and purchase-flow diagnostic information to help troubleshoot and improve the subscription experience.</li>
 </ul>
 <h2><span class="section-number">2.</span> Data We Process</h2>
 <h3>A. Data stored on your device and in iCloud (if enabled)</h3>
@@ -267,12 +267,15 @@
 <li>Fill from text — text you type or paste describing the nutrition information.</li>
 </ul>
 <p>This feature is optional. You must grant consent before any content is sent, and you can withdraw your consent at any time. See "How to Withdraw Your Consent for Nutrition Autofill" below.</p>
-<h3>C. Subscriptions</h3>
+<h3>C. Image Studio food name</h3>
+<p>If you use the optional Image Studio feature, the food name you type and the visual style you choose (illustration or animation) are sent to a third-party service provider for one purpose only: to generate a picture of that food, which is returned to the App so you can use it as the image of a food item. No photo, diary entry, profile information, or other data from your device is included in the request.</p>
+<p>This feature is optional. You must grant consent before any food name is sent, and you can withdraw your consent at any time. See "How to Withdraw Your Consent for Image Studio" below. Images you generate are saved with your other app content on your device (and in your personal iCloud, if you enable sync).</p>
+<h3>D. Subscriptions</h3>
 <p>If you subscribe to OmaBite, the transaction is processed by Apple through the App Store. We do not receive or store your payment card information. We may receive from Apple a transaction identifier and subscription status in order to verify your subscription and provide access to the App on your device.</p>
-<h3>D. Subscription paywall and purchase-flow diagnostics</h3>
+<h3>E. Subscription paywall and purchase-flow diagnostics</h3>
 <p>The App may collect limited diagnostic information about the subscription paywall and purchase flow. This may include paywall interaction events, selected subscription option, purchase-flow result, App Store storefront country or region, app version, and event time.</p>
 <p>We use this information to troubleshoot subscription issues, understand whether the paywall and purchase flow work correctly, and improve the subscription experience.</p>
-<h3>E. Device permissions</h3>
+<h3>F. Device permissions</h3>
 <p>The App may request the following permissions, which you may grant or deny, and later revoke in your device settings:</p>
 <ul>
 <li>Camera — to capture a nutrition label image for the Nutrition Autofill feature. This permission is requested by the system the first time you use the camera.</li>
@@ -284,6 +287,7 @@
 <li>to sync your data through iCloud if you enable that feature;</li>
 <li>to process the image or text you voluntarily submit through the Nutrition Autofill feature;</li>
 <li>to return recognized nutrition data and autofill relevant fields in the App;</li>
+<li>to generate the food image you request through the Image Studio feature, using the food name you voluntarily submit;</li>
 <li>to verify your subscription status and provide access to the App through the App Store;</li>
 <li>to troubleshoot subscription paywall and purchase-flow issues and improve the subscription experience.</li>
 </ul>
@@ -301,7 +305,21 @@
 <li>No image or text will be sent to any Nutrition Autofill service provider from this feature.</li>
 <li>You can continue to use all other features of OmaBite, including manually entering nutrition values. You may grant and withdraw your consent as many times as you wish. Granting consent does not automatically send any data — content is only sent when you actively submit an image or text through the Nutrition Autofill feature.</li>
 </ul>
-<h2><span class="section-number">6.</span> Data Storage and Retention</h2>
+<h2><span class="section-number">6.</span> Third-Party Processing for Image Studio</h2>
+<h3>When you use the optional Image Studio feature, the food name you submit and the visual style you choose are sent to a third-party service provider to generate a food image.</h3>
+<p><strong>Current service provider:</strong> We use OpenAI to generate Image Studio images. The request is sent through our relay on Cloudflare, which forwards it to OpenAI. The relay uses Apple's App Attest only to confirm that the request comes from a genuine copy of the App, and it does not store the food name.</p>
+<p>OpenAI's handling of API submissions is governed by its own policies and terms: <a class="rtf-url" href="https://openai.com/policies/api-data-usage-policies" rel="noopener noreferrer" target="_blank">https://openai.com/policies/api-data-usage-policies</a></p>
+<p><strong>Availability:</strong> Image Studio is not offered where OpenAI cannot be reached, including Mainland China, Hong Kong, and Macao. Where it is not offered, the feature is hidden and no food name is sent.</p>
+<p><strong>Changes in provider:</strong> We may change service providers over time. This Privacy Policy will be updated to reflect the current provider. If a change materially affects how your data is processed, we will notify you in the App before the change takes effect.</p>
+<p>You should avoid entering personal or sensitive information as the food name.</p>
+<h2><span class="section-number">7.</span> How to Withdraw Your Consent for Image Studio</h2>
+<p>The Image Studio feature only sends a food name to the service provider after you have explicitly granted consent. You can withdraw this consent at any time: <span class="nav-path-token">More</span> <span class="nav-path-token">(on iPhone)</span> <span class="nav-path-token">→</span> <span class="nav-path-token">Legal &amp; Privacy</span> <span class="nav-path-token">→</span> <span class="nav-path-token">Image Studio</span> <span class="nav-path-token">→</span> <span class="nav-path-token">Revoke</span>.</p>
+<h3>After you withdraw consent:</h3>
+<ul>
+<li>No food name will be sent to any Image Studio service provider from this feature.</li>
+<li>You can continue to use all other features of OmaBite, including choosing your own photo for a food item. You may grant and withdraw your consent as many times as you wish. Granting consent does not automatically send any data — a food name is only sent when you actively request an image through Image Studio.</li>
+</ul>
+<h2><span class="section-number">8.</span> Data Storage and Retention</h2>
 <h3>On-device and iCloud data</h3>
 <p>Your diary data and app content remain stored:</p>
 <ul>
@@ -311,53 +329,59 @@
 <p>This data remains there until you delete it, disable sync, delete the App's data, or remove it from your iCloud account according to Apple's systems and settings.</p>
 <h3>Nutrition Autofill submissions</h3>
 <p>Images and text submitted through Nutrition Autofill may be temporarily processed by the applicable third-party service provider as needed to complete your request and according to that provider's own policies and retention practices. OmaBite does not store these submissions on any server.</p>
+<h3>Image Studio submissions</h3>
+<p>Food names submitted through Image Studio may be temporarily processed by the third-party service provider as needed to generate your image and according to that provider's own policies and retention practices. OmaBite does not store these submissions on any server. The generated image is stored on your device (and in your personal iCloud, if you enable sync) as part of your app content.</p>
 <h3>Subscription paywall and purchase-flow diagnostics</h3>
 <p>Subscription paywall and purchase-flow diagnostic information is retained only for as long as reasonably necessary to troubleshoot subscription issues, review paywall performance, and improve the subscription experience. We may delete or aggregate this information when it is no longer needed.</p>
 <p>Because this diagnostic information is designed not to directly identify you, we may not be able to locate or delete a specific user's individual diagnostic events.</p>
-<h2><span class="section-number">7.</span> Legal Bases for Processing</h2>
+<h2><span class="section-number">9.</span> Legal Bases for Processing</h2>
 <h3>Where required by applicable law (for example, under the EU/UK GDPR), we process personal data on the following bases:</h3>
 <ul>
-<li><strong>Performance of a contract:</strong> to provide the App features you request, such as storing your diary data and returning Nutrition Autofill results.</li>
-<li><strong>Consent:</strong> when you choose to use optional features such as Nutrition Autofill, enable iCloud sync, or grant permissions such as camera access. You may withdraw consent at any time. For Nutrition Autofill specifically, you may withdraw consent at any time via <span class="nav-path-token">More</span> <span class="nav-path-token">(on iPhone)</span> <span class="nav-path-token">→</span> <span class="nav-path-token">Legal &amp; Privacy</span> <span class="nav-path-token">→</span> <span class="nav-path-token">Nutrition Autofill Consent</span> <span class="nav-path-token">→</span> <span class="nav-path-token">Revoke</span>.</li>
+<li><strong>Performance of a contract:</strong> to provide the App features you request, such as storing your diary data, returning Nutrition Autofill results, and generating Image Studio images.</li>
+<li><strong>Consent:</strong> when you choose to use optional features such as Nutrition Autofill or Image Studio, enable iCloud sync, or grant permissions such as camera access. You may withdraw consent at any time. For Nutrition Autofill specifically, you may withdraw consent at any time via <span class="nav-path-token">More</span> <span class="nav-path-token">(on iPhone)</span> <span class="nav-path-token">→</span> <span class="nav-path-token">Legal &amp; Privacy</span> <span class="nav-path-token">→</span> <span class="nav-path-token">Nutrition Autofill Consent</span> <span class="nav-path-token">→</span> <span class="nav-path-token">Revoke</span>. For Image Studio, you may withdraw consent at any time via <span class="nav-path-token">More</span> <span class="nav-path-token">(on iPhone)</span> <span class="nav-path-token">→</span> <span class="nav-path-token">Legal &amp; Privacy</span> <span class="nav-path-token">→</span> <span class="nav-path-token">Image Studio</span> <span class="nav-path-token">→</span> <span class="nav-path-token">Revoke</span>.</li>
 <li><strong>Legitimate interests:</strong> where applicable, to provide, troubleshoot, secure, and improve the App in a privacy-respecting manner consistent with this Policy, including limited subscription paywall and purchase-flow diagnostics.</li>
 </ul>
-<h2><span class="section-number">8.</span> Sharing of Data</h2>
+<h2><span class="section-number">10.</span> Sharing of Data</h2>
 <h3>We only share data externally in the following limited cases:</h3>
 <ul>
 <li>Content you voluntarily submit through Nutrition Autofill — either an image or text — is sent to the third-party service provider solely to recognize nutrition information and return structured results to the App.</li>
+<li>The food name and visual style you voluntarily submit through Image Studio are sent to the third-party service provider solely to generate a food image and return it to the App.</li>
 <li>Limited subscription paywall and purchase-flow diagnostic information may be transmitted to infrastructure we use to store these diagnostic events, solely to troubleshoot subscription issues and improve the subscription experience.</li>
 </ul>
-<h2><span class="section-number">9.</span> Your Choices</h2>
+<h2><span class="section-number">11.</span> Your Choices</h2>
 <h3>You can choose whether to use certain features:</h3>
 <ul>
 <li>You may use the App without using Nutrition Autofill (neither image nor text input).</li>
 <li>You may withdraw your consent for Nutrition Autofill at any time via <span class="nav-path-token">More</span> <span class="nav-path-token">(on iPhone)</span> <span class="nav-path-token">→</span> <span class="nav-path-token">Legal &amp; Privacy</span> <span class="nav-path-token">→</span> <span class="nav-path-token">Nutrition Autofill Consent</span> <span class="nav-path-token">→</span> <span class="nav-path-token">Revoke</span>.</li>
 <li>You may manually enter nutrition information instead of using Nutrition Autofill.</li>
+<li>You may use the App without using Image Studio, and you may withdraw your consent for Image Studio at any time via <span class="nav-path-token">More</span> <span class="nav-path-token">(on iPhone)</span> <span class="nav-path-token">→</span> <span class="nav-path-token">Legal &amp; Privacy</span> <span class="nav-path-token">→</span> <span class="nav-path-token">Image Studio</span> <span class="nav-path-token">→</span> <span class="nav-path-token">Revoke</span>.</li>
+<li>You may choose your own photo for a food item instead of generating one with Image Studio.</li>
 <li>You may choose whether to enable iCloud sync.</li>
 <li>You may grant or revoke camera access in your device settings at any time.</li>
 <li>You may delete your entries and other content from within the App.</li>
 </ul>
-<h2><span class="section-number">10.</span> Your Rights and Data Control</h2>
+<h2><span class="section-number">12.</span> Your Rights and Data Control</h2>
 <p>Your main app content, such as your food diary, meals, ingredients, recipes, weight, water records, and settings, stays on your device and in your personal iCloud account if you enable iCloud sync. You can view, edit, and delete this content from within the App. To remove this app content permanently, delete the App and manage related data through your iOS iCloud settings.</p>
-<p>Limited data that leaves your device, such as Nutrition Autofill submissions and subscription paywall and purchase-flow diagnostic information, is handled as described in the relevant sections of this Policy. Because some diagnostic information is designed not to directly identify you, we may not be able to locate or delete a specific user's individual diagnostic events.</p>
-<p>Depending on your location, you may have additional rights under laws such as the GDPR or CCPA — including rights of access, correction, deletion, restriction, portability, withdrawal of consent, and the right to lodge a complaint with your local data protection authority. Because we do not operate our own backend servers for your main app content, most rights related to that content are exercised directly through the App and your iCloud settings. For limited data that leaves your device, such as Nutrition Autofill submissions or diagnostic information, you may contact us at <a class="inline-gray-email" href="mailto:support@omabite.com">support@omabite.com</a>.</p>
-<h2><span class="section-number">11.</span> Children's Privacy</h2>
+<p>Limited data that leaves your device, such as Nutrition Autofill submissions, Image Studio food names, and subscription paywall and purchase-flow diagnostic information, is handled as described in the relevant sections of this Policy. Because some diagnostic information is designed not to directly identify you, we may not be able to locate or delete a specific user's individual diagnostic events.</p>
+<p>Depending on your location, you may have additional rights under laws such as the GDPR or CCPA — including rights of access, correction, deletion, restriction, portability, withdrawal of consent, and the right to lodge a complaint with your local data protection authority. Because we do not operate our own backend servers for your main app content, most rights related to that content are exercised directly through the App and your iCloud settings. For limited data that leaves your device, such as Nutrition Autofill submissions, Image Studio food names, or diagnostic information, you may contact us at <a class="inline-gray-email" href="mailto:support@omabite.com">support@omabite.com</a>.</p>
+<h2><span class="section-number">13.</span> Children's Privacy</h2>
 <p>The App isn't intended for children under 13 (under 16 in the EU/UK, where applicable). We do not knowingly collect personal data from children.</p>
-<h2><span class="section-number">12.</span> International Data Transfers</h2>
-<p>If a third-party service provider or infrastructure provider processes Nutrition Autofill submissions or subscription paywall and purchase-flow diagnostic information in a country or region different from your own, that data may be transferred internationally or across regions as part of providing the relevant feature or diagnostic function. Any such transfer is limited to what is necessary for the purposes described in this Policy and is subject to the provider's own safeguards and policies.</p>
-<h2><span class="section-number">13.</span> Third-Party Services</h2>
+<h2><span class="section-number">14.</span> International Data Transfers</h2>
+<p>If a third-party service provider or infrastructure provider processes Nutrition Autofill submissions, Image Studio food names, or subscription paywall and purchase-flow diagnostic information in a country or region different from your own, that data may be transferred internationally or across regions as part of providing the relevant feature or diagnostic function. Any such transfer is limited to what is necessary for the purposes described in this Policy and is subject to the provider's own safeguards and policies.</p>
+<h2><span class="section-number">15.</span> Third-Party Services</h2>
 <h3>The App may rely on third-party services that are independent from us, including:</h3>
 <ul>
 <li>Apple iCloud, if you enable iCloud sync;</li>
 <li>Apple’s App Store, for subscriptions and subscription status verification;</li>
 <li>OpenAI, for Nutrition Autofill image and text processing for most users;</li>
 <li>Alibaba Cloud Qwen API, for Nutrition Autofill image and text processing for users in Mainland China, Hong Kong, and Macao;</li>
-<li>Cloudflare, for limited subscription paywall and purchase-flow diagnostics.</li>
+<li>OpenAI, for Image Studio image generation;</li>
+<li>Cloudflare, for relaying Image Studio requests and for limited subscription paywall and purchase-flow diagnostics.</li>
 </ul>
 <p>Their handling of data is governed by their own privacy terms and policies.</p>
-<h2><span class="section-number">14.</span> Security</h2>
+<h2><span class="section-number">16.</span> Security</h2>
 <p>We take reasonable steps to minimize data processing and to design the App so that your main app content stays under your control on your device and in iCloud if enabled. However, no method of electronic storage or transmission is completely secure.</p>
-<h2><span class="section-number">15.</span> Changes to This Privacy Policy</h2>
+<h2><span class="section-number">17.</span> Changes to This Privacy Policy</h2>
 <p>We may update this Privacy Policy from time to time. If we make material changes, we will update the "Last updated" date above and, where appropriate, provide additional notice within the App.</p>
 </main>
 </body>
